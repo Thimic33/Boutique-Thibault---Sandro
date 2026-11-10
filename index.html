@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Boutique E-Gaming</title>
+    <style>
+        body { font-family: Arial; background: linear-gradient(#64759D, #826092, #E39986); color: white; text-align: center; height: 100vh;}
+        .carte {border: 2px solid #E39986;padding: 20px;display: inline-block;margin: 20px;border-radius: 30px;background-color: #2a2a40;width: 300px;height: 230px;font-size: 21px;font-family: Arial, Helvetica, sans-serif;background-size: cover;background-position: center;background-blend-mode: multiply;background-color: #777; transition: transform 0.3s;}
+        .carte:hover {
+            transform: scale(1.05);
+        }
+        button { background-color: #E39986; border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; border-radius: 10px; font-size: 20px;}
+        button:hover { background-color: #ffaa00; }
+        #points-display { font-size: 24px; color: #00ff00; font-weight: bold; }
+        .points-container {color: #00ff00; font-size: 23px;}
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenue dans votre boutique</h1>
+    <div class="points-container">
+        <b>Points disponibles : </b><span id="points-display">300</span> 💸
+    </div>
+
+    <div class="carte" style="background-image: url('image\ dragon\ blanc.jpg')">
+        <h2>Dragon Blanc</h2>
+        <p>Attaque : 120 | PV : 200</p>
+        <p>Prix : 50 points</p>
+        <button onclick="acheterCarte(1, 1, 50)">Acheter (50 pts)</button>
+    </div>
+
+    <div class="carte" style="background-image: url('image\ serpent\ gris.jpg')">
+        <h2>Serpent Gris</h2>
+        <p>Attaque : 45 | PV : 25</p>
+        <p>Prix : 10 points</p>
+        <button onclick="acheterCarte(1, 2, 10)">Acheter (10 pts)</button>
+    </div>
+
+    <div class="carte" style="background-image: url('image\ gobelin.jpg')">
+        <h2>Le Gobelin</h2>
+        <p>Attaque : 30 | PV : 50</p>   
+        <p>Prix : 10 points</p>
+        <button onclick="acheterCarte(1, 3, 10)">Acheter (10 pts)</button>
+    </div>
+
+    <div class="carte" style="background-image: url('image\ dragon.jpg')">
+        <h2>Dragon Infernal</h2>
+        <p>Attaque : 250 | PV : 300</p>
+        <p>Prix : 100 points</p>
+        <button onclick="acheterCarte(1, 4, 100)">Acheter (100 pts)</button>
+    </div>
+
+    <div class="carte" style="background-image: url('image\ phoenix.jpg')">
+        <h2>Phoenix Glacé</h2>
+        <p>Attaque : 180 | PV : 250</p>
+        <p>Prix : 75 points</p>
+        <button onclick="acheterCarte(1, 5, 75)">Acheter (75 pts)</button>
+    </div>
+
+    <div class="carte" style="background-image: url('image\ demon\ des\ ombres.jpg')">
+        <h2>Demon des ombres</h2>
+        <p>Attaque : 220 | PV : 180</p>
+        <p>Prix : 85 points</p>
+        <button onclick="acheterCarte(1, 6, 85)">Acheter (85 pts)</button>
+    </div>
+
+    <div class="carte" style="background-image: url('image\ archère.jpg')">
+        <h2>Archère des bois</h2>
+        <p>Attaque : 75 | PV : 90</p>
+        <p>Prix : 50 points</p>
+        <button onclick="acheterCarte(1, 7, 50)">Acheter (50 pts)</button>
+    </div>
+
+    <div class="carte" style="background-image: url('image\ ange\ divin.jpg')">
+        <h2>Ange Divin</h2>
+        <p>Attaque : 200 | PV : 400</p>
+        <p>Prix : 250 points</p>
+        <button onclick="acheterCarte(1, 8, 250)">Acheter (250 pts)</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
